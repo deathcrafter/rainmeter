@@ -216,7 +216,6 @@ int LuaScript::RunFunctionWithReturn(const char* funcName, double& numValue, std
 						break;
 
 					case LUA_TSTRING:
-						if (!hasStringResult)
 						{
 							size_t strLen = 0;
 							const char* str = lua_tolstring(L, -1, &strLen);
